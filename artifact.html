@@ -96,11 +96,12 @@
         }
 
         .logo img {
-            width: 50px;
-            height: 50px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             border: 3px solid var(--secondary-color);
             object-fit: cover;
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
         }
 
         .logo h1 {
@@ -287,6 +288,7 @@
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             transition: all 0.3s ease;
+            background: var(--card-bg);
         }
 
         .showcase-item:hover {
@@ -452,6 +454,11 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            .logo img {
+                width: 60px;
+                height: 60px;
+            }
+
             .hero h2 {
                 font-size: 1.8rem;
             }
@@ -567,21 +574,21 @@
             <h2 class="section-title">نمونه‌کارها و پروژه‌ها</h2>
             <div class="showcase-grid">
                 <div class="showcase-item">
-                    <img src="warehouse.JPG" alt="پروژه انبار هوشمند">
+                    <img src="warehouse.JPG" alt="پروژه انبار هوشمند" onerror="this.style.display='none'">
                     <div class="showcase-overlay">
                         <h3>انبار هوشمند</h3>
                         <p>پیاده‌سازی سیستم مدیریت انبار با کاربرد هوش مصنوعی</p>
                     </div>
                 </div>
                 <div class="showcase-item">
-                    <img src="warehouse-conveyor.png" alt="سیستم نوار نقاله">
+                    <img src="image.png" alt="سیستم نوار نقاله" onerror="this.style.display='none'">
                     <div class="showcase-overlay">
                         <h3>سیستم نوار نقاله</h3>
                         <p>بهینه‌سازی مسیر حرکت مواد در خطوط تولید</p>
                     </div>
                 </div>
                 <div class="showcase-item">
-                    <img src="warehouse-3d-model.png" alt="مدل‌سازی سه‌بعدی">
+                    <img src="image.png" alt="مدل‌سازی سه‌بعدی" onerror="this.style.display='none'">
                     <div class="showcase-overlay">
                         <h3>مدل‌سازی سه‌بعدی</h3>
                         <p>شبیه‌سازی و بهینه‌سازی طراحی فضای انبار</p>
@@ -648,7 +655,7 @@
                 <div class="contact-item">
                     <i>💬</i>
                     <h3>تلگرام</h3>
-                    <a href="https://t.me/kamalvand_supply" target="_blank">@kamalvand_supply</a>
+                    <a href="https://t.me/Malikamalvand" target="_blank">@Malikamalvand</a>
                 </div>
                 <div class="contact-item">
                     <i>💻</i>
