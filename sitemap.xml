@@ -1,67 +1,37 @@
-
-۵. محتوای بالا را در کادر بزرگ کپی کنید
-
-۶. به پایین بروید و روی **Commit new file** کلیک کنید
-
----
-
-### مرحله ۳: بررسی در مرورگر
-
-**منتظر ۲-۳ دقیقه بمانید** تا GitHub Pages فایل را منتشر کند.
-
-سپس به آدرس زیر بروید:
-
-https://ma-kamalvand.github.io/sitemap.xml
-
-باید محتوای XML را ببینید، **نه صفحه 404**.
-
----
-
-### مرحله ۴: ثبت در Google Search Console
-
-حالا برگردید به Google Search Console:
-
-۱. بخش **Sitemaps** را باز کنید
-۲. در کادر بنویسید: `sitemap.xml`
-۳. روی **Submit** کلیک کنید
-
----
-
-## 🎯 فایل robots.txt هم بسازید
-
-برای بهتر شدن SEO، یک فایل **`robots.txt`** هم بسازید:
-
-### محتوای robots.txt:
-
-txt
-User-agent: *
-Allow: /
-
-Sitemap: https://ma-kamalvand.github.io/sitemap.xml
-
-### نحوه آپلود:
-
-همان مراحل بالا، فقط:
-- نام فایل: `robots.txt`
-- محتوا: کد بالا
-
----
-
-## 📋 چک‌لیست نهایی:
-
-- [ ] فایل `sitemap.xml` ساخته شد
-- [ ] فایل در GitHub آپلود شد
-- [ ] ۲-۳ دقیقه صبر شد
-- [ ] آدرس `https://ma-kamalvand.github.io/sitemap.xml` در مرورگر باز می‌شود (بدون خطای 404)
-- [ ] فایل `robots.txt` هم آپلود شد
-- [ ] Sitemap در Google Search Console ثبت شد
-
----
-
-## 🚨 نکته مهم:
-
-**همیشه بعد از آپلود فایل‌های جدید، ۲-۳ دقیقه صبر کنید** تا GitHub Pages آن‌ها را منتشر کند.
-
----
-
-**بعد از آپلود، یک اسکرین‌شات از آدرس `https://ma-kamalvand.github.io/sitemap.xml` بفرستید تا مطمئن شوم درست کار کرده!** 🎯
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    
+    <!-- صفحه اصلی -->
+    <url>
+        <loc>https://ma-kamalvand.github.io/</loc>
+        <lastmod>2025-10-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- فایل‌های PDF -->
+    <url>
+        <loc>https://ma-kamalvand.github.io/graph.pdf</loc>
+        <lastmod>2025-10-23</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://ma-kamalvand.github.io/tracking.pdf</loc>
+        <lastmod>2025-10-23</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://ma-kamalvand.github.io/chidamane.pdf</loc>
+        <lastmod>2025-10-23</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+</urlset>
